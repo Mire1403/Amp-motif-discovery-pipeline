@@ -1,4 +1,4 @@
-# amp-motif-discovery-pipeline
+# Amp-motif-discovery-pipeline
  
 > Bioinformatic pipeline for antimicrobial peptide motif discovery, combination analysis and therapeutic candidate selection.
  
