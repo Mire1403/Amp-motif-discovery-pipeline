@@ -1,0 +1,13 @@
+name: amp_meme
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - meme
+  - pandas
+  - numpy
+  - scipy
+  - statsmodels
+  - matplotlib
+  - openpyxl

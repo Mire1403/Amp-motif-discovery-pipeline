@@ -1,0 +1,12 @@
+name: colabfold
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.13
+  - kalign2=2.04
+  - hhsuite=3.3.0
+  - mmseqs2=18.8cc5c
+  - pip
+  - pip:
+      - "colabfold[alphafold,openmm]==1.6.1"

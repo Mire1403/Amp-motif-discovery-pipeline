@@ -1,0 +1,174 @@
+Run: 2026-06-02 12:13:44
+Loaded 136 motifs, 13225 2cat combos, 11449 3cat combos
+FIMO master: 208 rows, 208 unique motifs
+
+============================================================
+BUILDING MASTER CANDIDATE TABLE
+============================================================
+
+Top 20 candidates (composite rank):
+         Motif Mechanism_2cat Family_ID  MIC_individual  Score_nolinker  Best_combo_MIC Best_linker  Composite_rank
+    KLLKKLLKLL         Carpet   FAM_101           17.58           61.29            5.04   No_linker            1.17
+      KLLKKLLK         Carpet   FAM_101           28.23           87.21            5.04   No_linker            4.17
+    LKKLLKKLKK         Carpet   FAM_101           23.48           81.56            6.57   No_linker            5.33
+       LKLLLKL         Carpet   FAM_102           21.56           91.97            6.20   No_linker            5.67
+     ARLLRRLAR         Carpet   FAM_009           43.03           98.39            5.42   No_linker            9.33
+    WKKJKKLAKK         Carpet   FAM_137           17.59           90.69            9.50         AAA           11.00
+      LGLLGKLL           Pore   FAM_102           52.30          102.03            5.23   No_linker           13.33
+    WKKJYKLAKK         Carpet   FAM_137           44.39           91.21            8.90   No_linker           13.67
+      KKLLKKLC         Carpet   FAM_101           48.12           97.42            6.64   No_linker           14.00
+       WKLFKKJ         Carpet   FAM_089           30.10          101.58            9.08         AAA           14.67
+        LKLKLK         Carpet   FAM_102           37.13          112.51            6.95         AAA           14.67
+      WKKWKKKW         Carpet   FAM_137           24.79           94.36           10.54   No_linker           15.00
+      KKLFKKKK         Carpet   FAM_089           57.69          108.22            7.30         AAA           19.67
+FFKKIKKKIKKIGK         Carpet   FAM_202           36.04           74.16           16.74   No_linker           20.00
+        RKKWFW           Pore   FAM_121           69.44          103.57            8.20         AAA           22.17
+       WRWWRRW         Carpet   FAM_137           70.83          105.81            7.71   No_linker           23.00
+        KIRVRL         Carpet   FAM_087           85.96          106.76            6.26         AAA           23.00
+     BLKELASLI         Carpet   FAM_015           29.40          128.37            8.72   No_linker           23.33
+  FLPILKGLLKGL         Carpet   FAM_102           63.84           90.91           11.41   No_linker           24.00
+        WWWRWV           Pore   FAM_140           59.35          114.67            8.74   No_linker           24.00
+
+============================================================
+VALIDATION CROSS-CHECK
+============================================================
+  Top20 score ∩ top20 best_combo:    12/20
+  Top20 score ∩ top20 individual:    10/20
+  Top20 individual ∩ composite rank: 12/20
+
+  Motifs in ALL 3 top20 lists:
+    ARLLRRLAR                 MIC_ind=43.0  Score=98.4  BestCombo=5.4
+    KLLKKLLK                  MIC_ind=28.2  Score=87.2  BestCombo=5.0
+    KLLKKLLKLL                MIC_ind=17.6  Score=61.3  BestCombo=5.0
+    LKKLLKKLKK                MIC_ind=23.5  Score=81.6  BestCombo=6.6
+    LKLLLKL                   MIC_ind=21.6  Score=92.0  BestCombo=6.2
+    WKKJYKLAKK                MIC_ind=44.4  Score=91.2  BestCombo=8.9
+
+  Spearman correlations:
+    Score vs BestCombo:  ρ=0.770
+    Score vs Individual: ρ=0.703
+    Individual vs Combo: ρ=0.716
+
+============================================================
+D. PIPELINE ORIGIN ANALYSIS
+============================================================
+
+  Pipeline origin of top 30 motifs (composite rank):
+          Motif  n_pipelines Pipelines_str  MIC_individual  Composite_rank
+     KLLKKLLKLL            1   mmseqs_meme           17.58            1.17
+       KLLKKLLK            1    cdhit_meme           28.23            4.17
+     LKKLLKKLKK            1  cdhit_streme           23.48            5.33
+        LKLLLKL            1   mmseqs_meme           21.56            5.67
+      ARLLRRLAR            1 mmseqs_streme           43.03            9.33
+     WKKJKKLAKK            1   mmseqs_meme           17.59           11.00
+       LGLLGKLL            1    cdhit_meme           52.30           13.33
+     WKKJYKLAKK            1    cdhit_meme           44.39           13.67
+       KKLLKKLC            1 mmseqs_streme           48.12           14.00
+        WKLFKKJ            1   mmseqs_meme           30.10           14.67
+         LKLKLK            1 mmseqs_streme           37.13           14.67
+       WKKWKKKW            1    cdhit_meme           24.79           15.00
+       KKLFKKKK            1   mmseqs_meme           57.69           19.67
+ FFKKIKKKIKKIGK            1   mmseqs_meme           36.04           20.00
+         RKKWFW            1   mmseqs_meme           69.44           22.17
+        WRWWRRW            1   mmseqs_meme           70.83           23.00
+         KIRVRL            1 mmseqs_streme           85.96           23.00
+      BLKELASLI            1   mmseqs_meme           29.40           23.33
+   FLPILKGLLKGL            1 mmseqs_streme           63.84           24.00
+         WWWRWV            1    cdhit_meme           59.35           24.00
+        IRVAVIR            1   mmseqs_meme           69.77           24.33
+     LGKLJKKAAK            1    cdhit_meme           47.15           24.33
+         GIJKKI            1  cdhit_streme           45.92           25.17
+        KHFIHRF            1 mmseqs_streme           43.42           26.67
+        RRRRWRR            1  cdhit_streme           54.28           27.67
+LLKAAGKVLAKIJGG            1   mmseqs_meme           83.28           28.00
+      RIRVAVIRA            1 mmseqs_streme          102.33           28.00
+      KKJKDFLKK            1    cdhit_meme           45.13           30.00
+       IKHYLPRL            1   mmseqs_meme           45.63           31.00
+  KKVGKKVAKAVAK            1    cdhit_meme           67.44           31.00
+
+  Pipeline frequency — full dataset vs top30:
+    cdhit_meme           all= 25 (18%)  top30=  8 (27%)
+    cdhit_streme         all= 18 (13%)  top30=  3 (10%)
+    mmseqs_meme          all= 33 (24%)  top30= 12 (40%)
+    mmseqs_streme        all= 60 (44%)  top30=  7 (23%)
+
+  n_pipelines distribution in top 30:
+n_pipelines
+1    30
+
+  Fig D1: D1_pipeline_origin_heatmap.png
+  Fig D2: D2_pipeline_frequency.png
+  Fig D3: D3_npipelines_vs_mic.png
+  Spearman n_pipelines vs MIC: ρ=nan  p=nan
+
+============================================================
+E. STRUCTURAL DIVERSITY — HIERARCHICAL CLUSTERING
+============================================================
+
+  Sequences for clustering: 50
+  Computing 50×50 distance matrix...
+
+  Cluster distribution (n_clusters=10):
+    Cluster  1 (n= 6): best=FFKKIKKKIKKIGK            MIC=36.0  rank=20.0
+    Cluster  2 (n= 9): best=LKKLLKKLKK                MIC=23.5  rank=5.3
+    Cluster  3 (n= 7): best=KLLKKLLKLL                MIC=17.6  rank=1.2
+    Cluster  4 (n= 2): best=NLKAJAA                   MIC=47.4  rank=48.0
+    Cluster  5 (n= 5): best=FLPILKGLLKGL              MIC=63.8  rank=24.0
+    Cluster  6 (n= 4): best=WRWWRRW                   MIC=70.8  rank=23.0
+    Cluster  7 (n= 2): best=IRVAVIR                   MIC=69.8  rank=24.3
+    Cluster  8 (n= 5): best=RKKWFW                    MIC=69.4  rank=22.2
+    Cluster  9 (n= 3): best=KHFIHRF                   MIC=43.4  rank=26.7
+    Cluster 10 (n= 7): best=ARLLRRLAR                 MIC=43.0  rank=9.3
+
+  === FINAL DIVERSE CANDIDATES (1 per cluster) ===
+         Motif Mechanism_2cat Family_ID  MIC_individual  Score_nolinker  Best_combo_MIC  n_pipelines  Cluster  Composite_rank
+    KLLKKLLKLL         Carpet   FAM_101           17.58           61.29            5.04            1        3            1.17
+    LKKLLKKLKK         Carpet   FAM_101           23.48           81.56            6.57            1        2            5.33
+     ARLLRRLAR         Carpet   FAM_009           43.03           98.39            5.42            1       10            9.33
+FFKKIKKKIKKIGK         Carpet   FAM_202           36.04           74.16           16.74            1        1           20.00
+        RKKWFW           Pore   FAM_121           69.44          103.57            8.20            1        8           22.17
+       WRWWRRW         Carpet   FAM_137           70.83          105.81            7.71            1        6           23.00
+  FLPILKGLLKGL         Carpet   FAM_102           63.84           90.91           11.41            1        5           24.00
+       IRVAVIR         Carpet   FAM_078           69.77          116.15            6.70            1        7           24.33
+       KHFIHRF         Carpet   FAM_049           43.42          112.98           14.74            1        9           26.67
+       NLKAJAA         Carpet   FAM_110           47.36          142.80           10.58            1        4           48.00
+
+  Fig E1: E1_dendrogram_diversity.png
+  Fig E2: E2_distance_heatmap.png
+  Fig E3: E3_diverse_candidates.png
+
+✅ Master table: /mnt/c/Users/mirei/Desktop/AMP-Comparative-Clustering-and-Motif-Analysis/results/14_final_candidates/01_master_candidates.xlsx
+✅ Supplementary CSV: 02_master_candidates_supplementary.csv
+✅ Diverse candidates: 03_diverse_candidates.csv
+
+============================================================
+TOP 10 FINAL CANDIDATES (composite rank)
+============================================================
+     Motif Mechanism_2cat Family_ID  MIC_individual  Score_nolinker  Best_combo_MIC  n_pipelines Best_linker  Composite_rank
+KLLKKLLKLL         Carpet   FAM_101           17.58           61.29            5.04            1   No_linker            1.17
+  KLLKKLLK         Carpet   FAM_101           28.23           87.21            5.04            1   No_linker            4.17
+LKKLLKKLKK         Carpet   FAM_101           23.48           81.56            6.57            1   No_linker            5.33
+   LKLLLKL         Carpet   FAM_102           21.56           91.97            6.20            1   No_linker            5.67
+ ARLLRRLAR         Carpet   FAM_009           43.03           98.39            5.42            1   No_linker            9.33
+WKKJKKLAKK         Carpet   FAM_137           17.59           90.69            9.50            1         AAA           11.00
+  LGLLGKLL           Pore   FAM_102           52.30          102.03            5.23            1   No_linker           13.33
+WKKJYKLAKK         Carpet   FAM_137           44.39           91.21            8.90            1   No_linker           13.67
+  KKLLKKLC         Carpet   FAM_101           48.12           97.42            6.64            1   No_linker           14.00
+   WKLFKKJ         Carpet   FAM_089           30.10          101.58            9.08            1         AAA           14.67
+
+============================================================
+DIVERSE CANDIDATES (10 clusters)
+============================================================
+         Motif  Cluster Mechanism_2cat Family_ID  MIC_individual  Best_combo_MIC  n_pipelines  Composite_rank
+    KLLKKLLKLL        3         Carpet   FAM_101           17.58            5.04            1            1.17
+    LKKLLKKLKK        2         Carpet   FAM_101           23.48            6.57            1            5.33
+     ARLLRRLAR       10         Carpet   FAM_009           43.03            5.42            1            9.33
+FFKKIKKKIKKIGK        1         Carpet   FAM_202           36.04           16.74            1           20.00
+        RKKWFW        8           Pore   FAM_121           69.44            8.20            1           22.17
+       WRWWRRW        6         Carpet   FAM_137           70.83            7.71            1           23.00
+  FLPILKGLLKGL        5         Carpet   FAM_102           63.84           11.41            1           24.00
+       IRVAVIR        7         Carpet   FAM_078           69.77            6.70            1           24.33
+       KHFIHRF        9         Carpet   FAM_049           43.42           14.74            1           26.67
+       NLKAJAA        4         Carpet   FAM_110           47.36           10.58            1           48.00
+
+✅ All outputs saved to: /mnt/c/Users/mirei/Desktop/AMP-Comparative-Clustering-and-Motif-Analysis/results/14_final_candidates

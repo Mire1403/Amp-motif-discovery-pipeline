@@ -1,0 +1,28 @@
+name: amp_motif
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Python
+  - python=3.13
+
+  # Data
+  - pandas>=2.0
+  - numpy>=2.0
+  - pyarrow          # parquet support
+  - openpyxl         # .xlsx read/write
+  - biopython
+
+  # Statistics & plotting
+  - scipy
+  - statsmodels
+  - matplotlib
+
+  # Bioinformatics tools
+  - cd-hit
+  - mmseqs2
+
+  # MEME Suite must be installed separately:
+  # https://meme-suite.org/meme/doc/install.html
+  # Required tools: meme, streme, fimo
